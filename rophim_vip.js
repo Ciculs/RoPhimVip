@@ -4,10 +4,10 @@
  * Description: Bypass VIP + Coin trên Rophim
  * 
  * [rewrite_local]
- * ^https?://rophimapi\.net/v1/user/info url script-response-body rophim_vip.js
+ * ^https?://api\.rofilm\.net/api/app/v1/user/info url script-response-body rophim_vip.js
  * 
  * [mitm]
- * hostname = rophimapi.net, *.rophimapi.net
+ * hostname = api.rofilm.net
  */
 
 var body = $response.body;
